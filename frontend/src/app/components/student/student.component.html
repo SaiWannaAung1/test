@@ -1,0 +1,57 @@
+<div class="wrapper">
+  <div class="sidebar">
+    <div class="bg_shadow"></div>
+    <div class="sidebar__inner">
+      <div class="close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="profile_info">
+        <div class="profile_img">
+          <img src="" alt="profile_img">
+        </div>
+        <div class="profile_data">
+          <p class="name">Alex John</p>
+          <p class="role">Administrator</p>
+        </div>
+      </div>
+      <ul class="siderbar_menu">
+        <li><a routerLink="/admin_dashboard/insert_faq" routerLinkActive="active">
+          <div class="title">Insert Faq</div>
+        </a></li>
+        <li><a routerLink="/admin_dashboard/view_faq" routerLinkActive="active">
+          <div class="title">View Faqs</div>
+        </a></li>
+        <li><a routerLink="/admin_dashboard/main_category" routerLinkActive="active">
+          <div class="title">Category Management</div>
+        </a></li>
+        <li><a href="#">
+          <div class="title">Contact Message</div>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main_container">
+    <div class="top_navbar">
+      <div class="hamburger">
+        <div class="hamburger__inner">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <ul class="right_bar ml-auto">
+        <li><i class="fas fa-search"></i></li>
+        <li><i class="fas fa-sign-out-alt"></i></li>
+      </ul>
+    </div>
+
+    <div class="container-fluid" style="background-color: #ECEFF1; height: 790px;">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
